@@ -208,16 +208,7 @@ input+label {
 }
 
 textarea {
-    height: 90px;
-}
-
-.test_link {
-    text-align: center;
-}
-.test_link a {
-    font-size: 4em;
-    float: none;
-    font-family: "Amatic SC",cursive;
+    height: 180px;
 }
 
     /* Button */
@@ -690,9 +681,17 @@ textarea {
     }
 
 /*********************************************************************************/
-/* Questionare                                                                   */
+/* Prelim questionare                                                                   */
 /*********************************************************************************/
 
+.prelim fieldset, #summary {
+    display: none;
+}
+.prelim fieldset:first-of-type {
+    display: block;
+}
+
 .sub_q {
+    display: none;
     margin: 0.5em 2em;
 }

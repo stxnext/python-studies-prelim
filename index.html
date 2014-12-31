@@ -3,14 +3,14 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <meta name="keywords" content="stxnext,python,studia,wsnhid,programowanie aplikacji internetowych">
+    <meta name="keywords" content="stxnext,stx next,python,studia,podyplomówka,studia podyplomowe,wsnhid,programowanie aplikacji internetowych,django,flask,pyramid,plone">
     <meta name="robots" content="follow, all">
     <meta name="language" content="pl-PL">
-    <meta name="description" content="Test predyspozycji do uczestnictwa w szkoleniu 'Programowanie aplikacji internetowych' na WSNHiD, prowadzonym przez STX Next.">
-    <meta property="og:title" content="Test predyspozycji">
+    <meta name="description" content="Test kompetencji do uczestnictwa w studiach podyplomowych 'Programowanie aplikacji internetowych' na WSNHiD, prowadzonych przez STX Next.">
+    <meta property="og:title" content="Test kompetencji">
     <meta property="og:type" content="website">
 
-    <title>Test predyspozycji</title>
+    <title>Test kompetencji</title>
     <link rel="stylesheet" href="theme/css/fonts.css">
     <noscript>
         <link rel="stylesheet" href="theme/css/skel-noscript.css" />
@@ -51,7 +51,7 @@
 
                             <!-- Logo -->
                             <div id="logo-container" class="logo-games">
-                                <h1>Test<br>predyspozycji</h1>
+                                <h1>Test<br>kompetencji</h1>
                             </div>
 
                         </section>
@@ -87,14 +87,253 @@
         <div class="container">
             <section class="box">
                 <p>
-                    Sprawdź czy posiadasz odpowiednie predyspozycje aby uczestniczyć w szkoleniu
-                    <a href="http://wsnhid.pl/programowanie-aplikacji-internetowych.html">Programowanie aplikacji internetowych</a>
-                    prowadoznym przez pracowników <a href="http://stxnext.pl">STX Next</a> w
+                    Sprawdź czy posiadasz odpowiednie kompetencje aby uczestniczyć w studiach podyplomowych
+                    <a href="http://wsnhid.pl/programowanie-aplikacji-internetowych-1.html">Programowanie aplikacji internetowych</a>
+                    prowadzonych przez pracowników <a href="http://stxnext.pl">STX Next</a> w
                     <a href="http://wsnhid.pl">Wyższej Szkole Nauk Humanistycznych i Dziennikarstwa</a>
                 </p>
-                <div class="row test_link">
-                    <a href="./test.html">Test predysposycji</a>
+
+                <form class="form-horizontal prelim">
+                    <fieldset id="know_prog">
+                        <div class="form-group">
+                            <label for="know_prog">Czy potrafisz programować?</label>
+                            <div class="controls">
+                                <div class="control">
+                                    <input name="know_prog" id="prog_y" value="y" type="radio">
+                                    <label class="radio" for="prog_y">Tak</label>
+                                </div>
+                                <div class="control">
+                                    <input name="know_prog" id="prog_n" value="n" type="radio">
+                                    <label class="radio" for="prog_n">Nie</label>
+                                </div>
+                                <div class="sub_q no">
+                                    <p>
+                                        Program szkolenia nie obejmuje nauki programowania od podstaw!
+                                    </p>
+                                    <p>
+                                        Szkolenie skierowane jest do osób, które potrafią już programować
+                                        (w dowolnym języku programowania) i chciałyby poznać lub poszerzyć
+                                        znajomość języka Python oraz frameworków pythonowych pozwalających
+                                        tworzyć aplikacje internetowe.
+                                    </p>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_cont" value="cont" id="prog_cont" />
+                                        <label for="prog_cont">Nauczę się podstaw programowania przed rozpoczęciem zajęć</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q1">
+                                    <label for="prog_lang">W jakim języku potrafisz programować?</label>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="cpp" />
+                                        <label for="prog_lang">C/C++</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="c-sharp" />
+                                        <label for="prog_lang">C#</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="java" />
+                                        <label for="prog_lang">Java</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="js" />
+                                        <label for="prog_lang">JavaScript</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="obj-c" />
+                                        <label for="prog_lang">Objective-C</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="pascal" />
+                                        <label for="prog_lang">Pascal</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="perl" />
+                                        <label for="prog_lang">Perl</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="php" />
+                                        <label for="prog_lang">PHP</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="py" />
+                                        <label for="prog_lang">Python</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="rb" />
+                                        <label for="prog_lang">Ruby</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="vb" />
+                                        <label for="prog_lang">Visual Basic</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="prog_lang[]" value="other" />
+                                        <label for="prog_lang">Inny</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q2">
+                                    <label for="prog_algo">Jaki jest wynik tego pseudo kodu?</label>
+                                    <pre>
+total = 2
+for x from 5 to 15
+  if x is even than
+      add x to total
+loop
+print total</pre>
+                                    <div class="control">
+                                        <input type="text" name="prog_algo" value="" id="prog_algo" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="know_html">
+                        <div class="form-group">
+                            <label for="can_html">Czy znasz HTML?</label>
+                            <div class="controls">
+                                <div class="control">
+                                    <input name="can_html" id="html_y" value="y" type="radio">
+                                    <label class="radio" for="html_y">Tak</label>
+                                </div>
+                                <div class="control">
+                                    <input name="can_html" id="html_n" value="n" type="radio">
+                                    <label class="radio" for="html_n">Nie</label>
+                                </div>
+                                <div class="sub_q no">
+                                    <p>
+                                        Program szkolenia nie obejmuje nauki tworzenia stron WWW!
+                                    </p>
+                                    <p>
+                                        Szkolenie skierowane jest do osób, które znają język HTML oraz
+                                        potrafią już tworzyć proste, statyczne strony internetowe
+                                        i chciałyby nauczyć się jak tworzyć aplikacje internetowe.
+                                    </p>
+                                    <div class="control">
+                                        <input type="checkbox" name="html_cont" value="cont" id="html_cont" />
+                                        <label for="html_cont">Nauczę się HTML przed rozpoczęciem zajęć</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q1">
+                                    <label for="html_ver">Jaką wersję HTML znasz?</label>
+                                    <div class="control">
+                                        <input type="checkbox" name="html_ver[]" value="html4" />
+                                        <label for="html_ver">HTML4</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="html_ver[]" value="html5" />
+                                        <label for="html_ver">HTML5</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="html_ver[]" value="xhtml" />
+                                        <label for="html_ver">XHTML</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="html_ver[]" value="other" />
+                                        <label for="html_ver">Inna</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q2">
+                                    <label for="html_algo">Napisz wycienek kodu HTML, który w przeglądarce będzie wyglądał jak na poniższym obrazku:</label>
+                                    <br />
+                                    <img src="./html_sample.png"/>
+                                    <div class="control">
+                                        <textarea name="html_algo" id="html_algo" rows="8" cols="50"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="know_linux">
+                        <div class="form-group">
+                            <label for="know_linux">Czy znasz podstawy Linuksa?</label>
+                            <div class="controls">
+                                <div class="control">
+                                    <input name="know_linux" id="linux_y" value="y" type="radio">
+                                    <label class="radio" for="linux_y">Tak</label>
+                                </div>
+                                <div class="control">
+                                    <input name="know_linux" id="linux_n" value="n" type="radio">
+                                    <label class="radio" for="linux_n">Nie</label>
+                                </div>
+                                <div class="sub_q no">
+                                    <p>
+                                        Program szkolenia nie obejmuje nauki podstaw Linuksa!
+                                    </p>
+                                    <p>
+                                        Podczas szkolenia wykorzystywane będą podstawowe komendy i polecenia
+                                        powłoki Linuksa.
+                                    </p>
+                                    <div class="control">
+                                        <input type="checkbox" name="linux_cont" value="cont" id="linux_cont" />
+                                        <label for="linux_cont">Nauczę się podstawowych komend Linuksa przed rozpoczęciem zajęć</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q1">
+                                    <label for="distro">Jaką dystrybucję Linuksa znasz?</label>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="arch" />
+                                        <label for="distro">Arch</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="centos" />
+                                        <label for="distro">CentOS</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="debian" />
+                                        <label for="distro">Debian</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="fedora" />
+                                        <label for="distro">Fedora</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="mint" />
+                                        <label for="distro">Mint</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="rhel" />
+                                        <label for="distro">Red Hat / RHEL</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="suse" />
+                                        <label for="distro">SUSE</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="ubuntu" />
+                                        <label for="distro">Ubuntu</label>
+                                    </div>
+                                    <div class="control">
+                                        <input type="checkbox" name="distro[]" value="other" />
+                                        <label for="distro">Inna</label>
+                                    </div>
+                                </div>
+                                <div class="sub_q q2">
+                                    <label for="linux_cmd_1">Napisz komendę przejścia do folderu <tt>app</tt></label>
+                                    <div class="control">
+                                        <input type="text" name="linux_cmd_1" value="" id="linux_cmd_1" />
+                                    </div>
+                                    <label for="linux_cmd_2">Napisz komendę usuwającą wszystkie pliki z roszerzeniem txt</label>
+                                    <div class="control">
+                                        <input type="text" name="linux_cmd_2" value="" id="linux_cmd_2" />
+                                    </div>
+                                    <label for="linux_cmd_3">Napisz komendę pokazującą wszystkie uruchomione procesy</label>
+                                    <div class="control">
+                                        <input type="text" name="linux_cmd_3" value="" id="linux_cmd_3" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div id="summary">
+                    <h2>Gratulacje!</h2>
+                    <h3>Posiadasz odpowiednie kompetencje aby rozpocząć szkolenie "Programowanie aplikacji internetowych"!</h3>
                 </div>
+
             </section>
         </div>
     </div>
@@ -120,6 +359,120 @@
     <script src="theme/js/skel-panels.js"></script>
     <script src="theme/js/application.js"></script>
     <!--[if lte IE 8]><script src="theme/js/html5shiv.js"></script><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /* fieldset - know programming language */
+            $('#prog_y').click(function(event) {
+                $('#know_prog .sub_q.q1').show();
+                $('#know_prog .sub_q.no').hide();
+            });
+            $('#prog_n').click(function(event) {
+                $('#know_prog .sub_q.q1').hide();
+                $('#know_prog .sub_q.no').show();
+            });
+            $('#prog_cont').change(function() {
+                if (this.checked) {
+                    $('#know_html').show();
+                } else {
+                    $('#know_html').hide();
+                }
+            });
+            $("input[name='prog_lang[]']").click(function(event) {
+                if ($("input[name='prog_lang[]']:checked").length) {
+                    $('#know_prog .sub_q.q2').show();
+                } else {
+                    $('#know_prog .sub_q.q2').hide();
+                }
+            });
+            $("#prog_algo").keyup(function(event) {
+                if ($("#prog_algo").val() === '52') {
+                    $('#know_html').show();
+                } else {
+                    $('#know_html').hide();
+                }
+            });
+
+            /* fieldset - know html */
+            $('#html_y').click(function(event) {
+                $('#know_html .sub_q.q1').show();
+                $('#know_html .sub_q.no').hide();
+            });
+            $('#html_n').click(function(event) {
+                $('#know_html .sub_q.q1').hide();
+                $('#know_html .sub_q.no').show();
+            });
+            $('#html_cont').change(function() {
+                if (this.checked) {
+                    $('#know_linux').show();
+                } else {
+                    $('#know_linux').hide();
+                }
+            });
+            $("input[name='html_ver[]']").click(function(event) {
+                if ($("input[name='html_ver[]']:checked").length) {
+                    $('#know_html .sub_q.q2').show();
+                } else {
+                    $('#know_html .sub_q.q2').hide();
+                }
+            });
+            // <ul><li><b>bold</b></li><li><i>italic</i></li></ul>
+            $("#html_algo").keyup(function(event) {
+                var answer = $("#html_algo").val();
+                if (
+                    answer.indexOf('<ul>') >= 0 &&
+                    answer.indexOf('</ul>') >= 0 &&
+                    answer.indexOf('<li>') >= 0 &&
+                    answer.indexOf('</li>') >= 0 &&
+                    answer.indexOf('<b>') >= 0 &&
+                    answer.indexOf('</b>') >= 0 &&
+                    answer.indexOf('<i>') >= 0 &&
+                    answer.indexOf('</i>') >= 0
+                ) {
+                    $('#know_linux').show();
+                } else {
+                    $('#know_linux').hide();
+                }
+            });
+
+            /* fieldset - know linux */
+            $('#linux_y').click(function(event) {
+                $('#know_linux .sub_q.q1').show();
+                $('#know_linux .sub_q.no').hide();
+            });
+            $('#linux_n').click(function(event) {
+                $('#know_linux .sub_q.q1').hide();
+                $('#know_linux .sub_q.no').show();
+            });
+            $('#linux_cont').change(function() {
+                if (this.checked) {
+                    $('#summary').show();
+                } else {
+                    $('#summary').hide();
+                }
+            });
+            $("input[name='distro[]']").click(function(event) {
+                if ($("input[name='distro[]']:checked").length) {
+                    $('#know_linux .sub_q.q2').show();
+                } else {
+                    $('#know_linux .sub_q.q2').hide();
+                }
+            });
+            $("#know_linux .sub_q.q2 input").keyup(function(event) {
+                if (
+                    $("#linux_cmd_1").val() === 'cd app' &&
+                    $("#linux_cmd_2").val() === 'rm *.txt' &&
+                    $("#linux_cmd_3").val().indexOf('ps') == 0
+                ) {
+                    $('#summary').show();
+                } else {
+                    $('#summary').hide();
+                }
+            });
+        });
+    </script>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
