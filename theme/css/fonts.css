@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v4/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v4/IDnkRTPGcrSVo50UyYNK73hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'stx-icons';
+    src:url('../fonts/stx-icons.eot?');
+    src:url('../fonts/stx-icons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/stx-icons.woff?') format('woff'),
+        url('../fonts/stx-icons.ttf?') format('truetype'),
+        url('../fonts/stx-icons.svg?#stx-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'stx-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lin:before {
+    content: "\e60c";
+}
+.icon-mobileUI-opener:before {
+    content: "\e60b";
+}
+.icon-twitter:before {
+    content: "\e608";
+}
+.icon-git:before {
+    content: "\e609";
+}
+.icon-fb:before {
+    content: "\e60a";
+}
+.icon-spinner:before {
+    content: "\e600";
+}
+.icon-rocket:before {
+    content: "\e601";
+}
+.icon-path:before {
+    content: "\f074";
+}
+.icon-share:before {
+    content: "\e602";
+}
+.icon-heart:before {
+    content: "\e603";
+}
+.icon-wand:before {
+    content: "\e604";
+}
+.icon-pyicon:before {
+    content: "\e605";
+}
+.icon-target:before {
+    content: "\e606";
+}
+.icon-dot_group:before {
+    content: "\e607";
+}
+.icon-star:before {
+    content: "\e6ce";
+}
+.icon-star3:before {
+    content: "\e6d0";
+}
+.icon-arrow-down7:before {
+    content: "\e899";
+}
+.icon-arrow-up6:before {
+    content: "\e89a";
+}
