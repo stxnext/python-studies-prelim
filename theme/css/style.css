@@ -684,7 +684,7 @@ textarea {
 /* Prelim questionare                                                                   */
 /*********************************************************************************/
 
-.prelim fieldset, #summary {
+.prelim fieldset, .summary {
     display: none;
 }
 .prelim fieldset:first-of-type {

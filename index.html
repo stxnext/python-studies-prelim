@@ -235,7 +235,7 @@ print total</pre>
                                     </div>
                                 </div>
                                 <div class="sub_q q2">
-                                    <label for="html_algo">Napisz wycienek kodu HTML, który w przeglądarce będzie wyglądał jak na poniższym obrazku:</label>
+                                    <label for="html_algo">Napisz wycienek kodu HTML, który w przeglądarce będzie wyglądał jak na poniższym obrazku (wypunktowanie z dwoma elementami):</label>
                                     <br />
                                     <img src="./html_sample.png"/>
                                     <div class="control">
@@ -329,9 +329,18 @@ print total</pre>
                     </fieldset>
                 </form>
 
-                <div id="summary">
+                <div class="summary" id="summary-full">
                     <h2>Gratulacje!</h2>
-                    <h3>Posiadasz odpowiednie kompetencje aby rozpocząć szkolenie "Programowanie aplikacji internetowych"!</h3>
+                    <h3>Posiadasz odpowiednie kompetencje aby rozpocząć studia podyplomowe "Programowanie aplikacji internetowych"!</h3>
+                </div>
+                <div class="summary" id="summary-some">
+                    <h2>Brawo!</h2>
+                    <h3>Posiadasz część kompetencji potrzebnych aby rozpocząć studia podyplomowe "Programowanie aplikacji internetowych".</h3>
+                    <h4>Pamiętaj, że jeżeli dostaniesz się na studia, to musisz poznać niektóre zagadnienia przed rozpoczęciem pierwszych zajęć!</h4>
+                </div>
+                <div class="summary" id="summary-none">
+                    <h3>Nie posiadasz odpowiednich kompetencji aby rozpocząć studia podyplomowe "Programowanie aplikacji internetowych"!</h3>
+                    <h4>Jeżeli mimo to weźmiesz udział w rekrutacji i dostaniesz się na studia, to musisz poznać wszystkie brakujące zagadnienia przed rozpoczęciem pierwszych zajęć!</h4>
                 </div>
 
             </section>
@@ -367,6 +376,7 @@ print total</pre>
             $('#prog_y').click(function(event) {
                 $('#know_prog .sub_q.q1').show();
                 $('#know_prog .sub_q.no').hide();
+                $('#prog_cont').attr('checked', false);
             });
             $('#prog_n').click(function(event) {
                 $('#know_prog .sub_q.q1').hide();
@@ -398,6 +408,7 @@ print total</pre>
             $('#html_y').click(function(event) {
                 $('#know_html .sub_q.q1').show();
                 $('#know_html .sub_q.no').hide();
+                $('#html_cont').attr('checked', false);
             });
             $('#html_n').click(function(event) {
                 $('#know_html .sub_q.q1').hide();
@@ -440,6 +451,7 @@ print total</pre>
             $('#linux_y').click(function(event) {
                 $('#know_linux .sub_q.q1').show();
                 $('#know_linux .sub_q.no').hide();
+                $('#linux_cont').attr('checked', false);
             });
             $('#linux_n').click(function(event) {
                 $('#know_linux .sub_q.q1').hide();
@@ -447,9 +459,13 @@ print total</pre>
             });
             $('#linux_cont').change(function() {
                 if (this.checked) {
-                    $('#summary').show();
+                    if ($('#prog_cont:checked, #html_cont:checked').length == 2) {
+                        $('#summary-none').show();
+                    } else {
+                        $('#summary-some').show();
+                    }
                 } else {
-                    $('#summary').hide();
+                    $('.summary').hide();
                 }
             });
             $("input[name='distro[]']").click(function(event) {
@@ -465,9 +481,16 @@ print total</pre>
                     $("#linux_cmd_2").val() === 'rm *.txt' &&
                     $("#linux_cmd_3").val().indexOf('ps') == 0
                 ) {
-                    $('#summary').show();
+                    var cont = $('#prog_cont:checked, #html_cont:checked, #linux_cont:checked');
+                    if (cont.length == 3) {
+                        $('#summary-none').show();
+                    } else if (cont.length == 0) {
+                        $('#summary-full').show();
+                    } else {
+                        $('#summary-some').show();
+                    }
                 } else {
-                    $('#summary').hide();
+                    $('.summary').hide();
                 }
             });
         });
